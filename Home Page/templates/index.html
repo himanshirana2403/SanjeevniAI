@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjeevani</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="bg-light">
+    <h1>Doctors & Patients Distribution in India</h1>
+    <p>The choropleth map below visualizes the number of doctors and patients who have joined our platform.</p>
+
+    <h2>Doctors Connected Across India</h2>
+    <img src="{{ url_for('uploaded_file', filename='doctors_map.png') }}" alt="Doctors Map"
+        style="max-width: 50%; height: auto;">
+    
+    <h2>Patients Connected Across India</h2>
+    <img src="{{ url_for('uploaded_file', filename='patients_map.png') }}" alt="Patients Map"
+        style="max-width: 50%; height: auto;">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
